@@ -1,48 +1,48 @@
 <?php 
-require 'functions.php';
+    require 'functions.php';
 
-//! Cek apakah tombol submit untuk menu ditekan
-if (isset($_POST["submit_menu"])) {
- 
-    // cek apakah data berhasil ditambahkan atau tidak
-    if (tambah('menu', $_POST) > 0) {
-        echo "
-            <script>
-                alert('data berhasil ditambahkan!');
-                document.location.href = 'index.php';
-            </script>
-        ";
-    } else{
-        echo "
-            <script>
-                alert('data gagal ditambahkan!');
-                document.location.href = 'index.php';
-            </script>
-        ";
+    //! Cek apakah tombol submit untuk menu ditekan
+    if (isset($_POST["submit_menu"])) {
+    
+        // cek apakah data berhasil ditambahkan atau tidak
+        if (tambah('menu', $_POST) > 0) {
+            echo "
+                <script>
+                    alert('data berhasil ditambahkan!');
+                    document.location.href = 'admin.php';
+                </script>
+            ";
+        } else{
+            echo "
+                <script>
+                    alert('data gagal ditambahkan!');
+                    document.location.href = 'admin.php';
+                </script>
+            ";
+        }
+
     }
 
-}
-
-//! Cek apakah tombol submit untuk produk ditekan
-if (isset($_POST["submit_product"])) {
- 
-    // cek apakah data berhasil ditambahkan atau tidak
-    if (tambah('products', $_POST) > 0) {
-        echo "
-            <script>
-                alert('data berhasil ditambahkan!');
-                document.location.href = 'index.php';
-            </script>
-        ";
-    } else {
-        echo "
-            <script>
-                alert('data gagal ditambahkan!');
-                document.location.href = 'index.php';
-            </script>
-        ";
+    //! Cek apakah tombol submit untuk produk ditekan
+    if (isset($_POST["submit_product"])) {
+    
+        // cek apakah data berhasil ditambahkan atau tidak
+        if (tambah('products', $_POST) > 0) {
+            echo "
+                <script>
+                    alert('data berhasil ditambahkan!');
+                    document.location.href = 'admin.php';
+                </script>
+            ";
+        } else {
+            echo "
+                <script>
+                    alert('data gagal ditambahkan!');
+                    document.location.href = 'admin.php';
+                </script>
+            ";
+        }
     }
-}
 
 ?>
 
@@ -73,7 +73,7 @@ if (isset($_POST["submit_product"])) {
             </div>
             <div class="form-group">
                 <label for="img">Image : </label>
-                <input type="text" name="img" id="img" required oninput="previewImage()">
+                <input type="file" name="img" id="img" required oninput="previewImage()">
             </div>
             <div class="form-group">
                 <img id="imagePreview" src="#" alt="Image Preview" style="display: none; max-width: 200px; margin-top: 10px;">
@@ -96,7 +96,7 @@ if (isset($_POST["submit_product"])) {
             </div>
             <div class="form-group">
                 <label for="img">Image : </label>
-                <input type="text" name="img" id="img" required oninput="previewImage()">
+                <input type="file" name="img" id="img" required oninput="previewImage()">
             </div>
             <div class="form-group">
                 <img id="imagePreview" src="#" alt="Image Preview" style="display: none; max-width: 200px; margin-top: 10px;">
