@@ -64,7 +64,7 @@ function upload($type) {
     }
 
     // Cek jika ukurannya terlalu besar
-    if ($fileSize > 1000000) {
+    if ($fileSize > 10000000) {
         echo "<script>alert('Ukuran gambar terlalu besar! Maksimal 1MB.');</script>";
         return false;
     }

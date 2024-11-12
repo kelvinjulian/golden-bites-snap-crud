@@ -765,3 +765,17 @@ footer .credit a {
     font-size: 55%;
   }
 }
+
+/* Menonaktifkan mode gelap secara paksa */
+:root {
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Atur warna latar belakang dan teks secara eksplisit */
+  body {
+    background-color: #ffffff; /* Warna putih untuk latar belakang */
+    color: #000000; /* Warna hitam untuk teks */
+  }
+  /* Sesuaikan elemen lainnya sesuai dengan desain light mode */
+}
