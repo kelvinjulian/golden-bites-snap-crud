@@ -391,6 +391,7 @@ $products = query("SELECT * FROM products");
             <a href="#hero">Home</a>
             <a href="#about">About Us</a>
             <a href="#menu">Menu</a>
+            <a href="#products">Products</a>
             <a href="#contact">Contact</a>
         </div>
         <div class="credit">
